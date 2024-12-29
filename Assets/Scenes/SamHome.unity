@@ -347,7 +347,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5df033c078c64c5ea95b1ce92949f6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 358feb0c7ec834de094750aea20279d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -792,12 +792,12 @@ MonoBehaviour:
   StreetscapeGeometryManager: {fileID: 596133973}
   ARCoreExtensions: {fileID: 1476232295}
   StreetscapeGeometryMaterialBuilding:
-  - {fileID: 2100000, guid: 7894c3ef401af4931aa6a101b5fbd724, type: 2}
-  - {fileID: 2100000, guid: 4b2d0d8634e20448cb7ef06579fe9bbb, type: 2}
-  - {fileID: 2100000, guid: 3a5a66d1f5c534a27a708c3f235eaa5d, type: 2}
-  StreetscapeGeometryMaterialTerrain: {fileID: 2100000, guid: 775ce3c1866ce4692b5d2cd9c1848a39, type: 2}
-  GeospatialPrefab: {fileID: 5831908950388203684, guid: f09a13e3d47394ab588884ffd124d732, type: 3}
-  TerrainPrefab: {fileID: 5831908950388203684, guid: a46bc1cf69cc345ba81f34525c7e1b09, type: 3}
+  - {fileID: 2100000, guid: a8362d509a6524cf59bf51a30e860bcc, type: 2}
+  - {fileID: 2100000, guid: 5a4d35edaa1c54bcc887dcc5224c6622, type: 2}
+  - {fileID: 2100000, guid: a07c4f98f975b4e19b59009c8dd92be0, type: 2}
+  StreetscapeGeometryMaterialTerrain: {fileID: 2100000, guid: 34eecd9782120490a9b72c70d76e1c23, type: 2}
+  GeospatialPrefab: {fileID: 5831908950388203684, guid: 4485f0acf4436425fb4b3f9d0ddad280, type: 3}
+  TerrainPrefab: {fileID: 5831908950388203684, guid: b4ce78365f8b24bcc832d9bc85697376, type: 3}
   PrivacyPromptCanvas: {fileID: 782365343}
   VPSCheckCanvas: {fileID: 61745207}
   ARViewCanvas: {fileID: 1041456683}
@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5df033c078c64c5ea95b1ce92949f6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 358feb0c7ec834de094750aea20279d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8327b807ca7a4c87b3b7afa5a2cb0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnchorPrefab: {fileID: 5831908950388203684, guid: f09a13e3d47394ab588884ffd124d732, type: 3}
+  AnchorPrefab: {fileID: 5831908950388203684, guid: 4485f0acf4436425fb4b3f9d0ddad280, type: 3}
 --- !u!114 &596133974
 MonoBehaviour:
   m_ObjectHideFlags: 0

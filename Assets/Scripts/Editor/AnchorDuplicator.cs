@@ -29,7 +29,7 @@ namespace Google.XR.ARCoreExtensions.Codelabs.GeospatialCreatorApi
 
     public class AnchorDuplicator
     {
-        private const string API_KEY = "<YOUR_API_KEY_HERE>";
+        private const string API_KEY = "AIzaSyCk_l32g0USegUtrlR1zx4zsM8sjoRPZjA";
 
         private static UnityWebRequest _placesApiRequest = null;
         private static PlacesApiResponse.Place[] _places = null;
