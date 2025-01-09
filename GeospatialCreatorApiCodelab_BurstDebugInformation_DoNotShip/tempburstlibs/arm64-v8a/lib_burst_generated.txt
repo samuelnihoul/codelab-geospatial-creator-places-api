@@ -1,4 +1,4 @@
-Library: /Users/samuelnihoul/Documents/GitHub/Geospatial9/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
+Library: C:\Users\Administrator\Documents\GitHub\codelab-geospatial-creator-places-api\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --platform=Android
 --backend=burst-llvm-16
 --target=ARMV8A_AARCH64
@@ -7,11 +7,11 @@ Library: /Users/samuelnihoul/Documents/GitHub/Geospatial9/Temp/BurstOutput/tempb
 --dump=Function
 --float-precision=Standard
 --target-framework=NetFramework
---generate-link-xml=Temp/burst.link.xml
---temp-folder=/Users/samuelnihoul/Documents/GitHub/Geospatial9/Temp/Burst
---key-folder=/Applications/Unity/Hub/Editor/2022.3.54f1/PlaybackEngines/AndroidPlayer
---decode-folder=/Users/samuelnihoul/Documents/GitHub/Geospatial9/Library/Burst
---output=/Users/samuelnihoul/Documents/GitHub/Geospatial9/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
+--generate-link-xml=Temp\burst.link.xml
+--temp-folder=C:\Users\Administrator\Documents\GitHub\codelab-geospatial-creator-places-api\Temp\Burst
+--key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.54f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--decode-folder=C:\Users\Administrator\Documents\GitHub\codelab-geospatial-creator-places-api\Library\Burst
+--output=C:\Users\Administrator\Documents\GitHub\codelab-geospatial-creator-places-api\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 
