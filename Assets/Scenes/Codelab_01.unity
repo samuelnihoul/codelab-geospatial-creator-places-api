@@ -889,76 +889,6 @@ RectTransform:
   m_AnchoredPosition: {x: -97, y: 99}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.50000006}
---- !u!1 &384014290
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 384014292}
-  - component: {fileID: 384014291}
-  m_Layer: 0
-  m_Name: GeospatialController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &384014291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384014290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a1114bd37d249b08c83cfbaf234679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Origin: {fileID: 596133977}
-  Session: {fileID: 193207847}
-  AnchorManager: {fileID: 596133976}
-  RaycastManager: {fileID: 596133975}
-  EarthManager: {fileID: 596133974}
-  StreetscapeGeometryManager: {fileID: 596133973}
-  ARCoreExtensions: {fileID: 1476232295}
-  StreetscapeGeometryMaterialBuilding:
-  - {fileID: 2100000, guid: 7894c3ef401af4931aa6a101b5fbd724, type: 2}
-  StreetscapeGeometryMaterialTerrain: {fileID: 2100000, guid: 775ce3c1866ce4692b5d2cd9c1848a39, type: 2}
-  GeospatialPrefab: {fileID: 5831908950388203684, guid: f09a13e3d47394ab588884ffd124d732, type: 3}
-  TerrainPrefab: {fileID: 5831908950388203684, guid: a46bc1cf69cc345ba81f34525c7e1b09, type: 3}
-  PrivacyPromptCanvas: {fileID: 782365343}
-  VPSCheckCanvas: {fileID: 61745207}
-  ARViewCanvas: {fileID: 1041456683}
-  ClearAllButton: {fileID: 1782521151}
-  GeometryToggle: {fileID: 697834362}
-  AnchorSettingButton: {fileID: 1673945164}
-  AnchorSettingPanel: {fileID: 624315044}
-  GeospatialAnchorToggle: {fileID: 1505297644}
-  TerrainAnchorToggle: {fileID: 809809105}
-  RooftopAnchorToggle: {fileID: 565032427}
-  InfoPanel: {fileID: 430750537}
-  InfoText: {fileID: 1587000028}
-  SnackBarText: {fileID: 1382347801}
-  DebugText: {fileID: 1664493018}
---- !u!4 &384014292
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384014290}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 833, y: 654, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &430750537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1103,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.8, y: 79.4, z: -10.7}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3006,7 +2936,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 384014291}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: OnLearnMoreClicked
         m_Mode: 1
@@ -4722,7 +4652,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 384014291}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: OnClearAllClicked
         m_Mode: 1
@@ -5140,7 +5070,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 384014291}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: OnContinueClicked
         m_Mode: 1
@@ -5273,7 +5203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 384014291}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: OnGetStartedClicked
         m_Mode: 1
@@ -5408,7 +5338,6 @@ SceneRoots:
   - {fileID: 1476232296}
   - {fileID: 683091023}
   - {fileID: 1154590969}
-  - {fileID: 384014292}
   - {fileID: 1434703286}
   - {fileID: 496961269}
   - {fileID: 1337111021}
