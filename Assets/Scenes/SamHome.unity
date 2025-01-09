@@ -3385,12 +3385,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originAuthority: 0
-  _latitude: 37.422098
-  _longitude: -122.08286
+  _latitude: 48.29110559999999
+  _longitude: 2.9427036
   _height: 11.5
-  _ecefX: -2693794.253825423
-  _ecefY: -4297131.080299235
-  _ecefZ: 3854708.1344926353
+  _ecefX: 4246009.419182109
+  _ecefY: 218266.42867080806
+  _ecefZ: 4738482.768236544
   _scale: 1
 --- !u!114 &1434703285
 MonoBehaviour:

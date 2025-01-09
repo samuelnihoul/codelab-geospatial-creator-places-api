@@ -1155,12 +1155,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 48.93078038555625
-  _longitude: 2.185078603122433
+  _latitude: 48.29110559999999
+  _longitude: 2.9427036
   _altitude: 11.500000000931323
   _altitudeType: 1
   _useEditorAltitudeOverride: 1
-  _editorAltitudeOverride: 90.90001656953245
+  _editorAltitudeOverride: 132.57826196681708
   _anchorManager: {fileID: 596133976}
   Origin: {fileID: 1434703285}
 --- !u!4 &496961269
@@ -1172,7 +1172,7 @@ Transform:
   m_GameObject: {fileID: 496961263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.8, y: 79.4, z: -10.7}
+  m_LocalPosition: {x: 4089115, y: -2115669, z: 2416768.2}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3616,12 +3616,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originAuthority: 0
-  _latitude: 48.9308766
-  _longitude: 2.1851987
+  _latitude: 46.7928486
+  _longitude: -71.16137859999999
   _height: 11.5
-  _ecefX: 4195188.0534727145
-  _ecefY: 160077.5310592657
-  _ecefZ: 4785520.695709832
+  _ecefX: 1412545.3831684687
+  _ecefY: -4140174.8114354163
+  _ecefZ: 4626037.171111433
   _scale: 1
 --- !u!114 &1434703285
 MonoBehaviour:
