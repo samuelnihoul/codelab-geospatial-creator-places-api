@@ -929,12 +929,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 48.29110559999999
+  _latitude: 48.29110560000001
   _longitude: 2.9427036000000015
   _altitude: 11.500000000931323
   _altitudeType: 1
   _useEditorAltitudeOverride: 1
-  _editorAltitudeOverride: 132.66228485200554
+  _editorAltitudeOverride: 132.66228485107422
   _anchorManager: {fileID: 596133976}
   Origin: {fileID: 1434703285}
 --- !u!4 &496961269
@@ -947,7 +947,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.820766e-11, y: 121.162285, z: 4.656613e-10}
-  m_LocalScale: {x: 100, y: 10, z: 100}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
