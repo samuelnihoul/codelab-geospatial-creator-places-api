@@ -3489,7 +3489,7 @@ MonoBehaviour:
   force: 500
   frequency: 0.5
   initialOffset: {x: 0, y: 0, z: 1}
-  ballPrefab: {fileID: 5201614734372423355, guid: b8ce37fbdc5314d969c2cd8f6f531590, type: 3}
+  ballPrefab: {fileID: 8226400644690965493, guid: 7cb14c99db5ae4643a8391a7298fdf6c, type: 3}
   lifeInSeconds: 15
   enableShooting: 1
 --- !u!4 &1337111021
