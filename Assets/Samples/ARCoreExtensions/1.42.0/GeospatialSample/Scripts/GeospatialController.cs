@@ -710,7 +710,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                     go.SetActive(true);
                 }
 
-                ResolveHistory();
+          
             }
             else
             {
@@ -1040,37 +1040,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                 return;
             }
 
-            // Raycast against detected planes.
-            List<ARRaycastHit> planeHitResults = new List<ARRaycastHit>();
-            RaycastManager.Raycast(
-                position, planeHitResults, TrackableType.Planes | TrackableType.FeaturePoint);
-            if (planeHitResults.Count > 0)
-            {
-                GeospatialAnchorHistory history = CreateHistory(planeHitResults[0].pose,
-                    _anchorType);
-
-                if (_anchorType == AnchorType.Rooftop)
-                {
-                    // The coroutine will create the anchor when the promise is done.
-                    Quaternion eunRotation = CreateRotation(history);
-                    ResolveAnchorOnRooftopPromise rooftopPromise =
-                        AnchorManager.ResolveAnchorOnRooftopAsync(
-                            history.Latitude, history.Longitude,
-                            0, eunRotation);
-
-                    StartCoroutine(CheckRooftopPromise(rooftopPromise, history));
-                    return;
-                }
-
-                var anchor = PlaceGeospatialAnchor(history);
-                if (anchor != null)
-                {
-                    _historyCollection.Collection.Add(history);
-                }
-
-                ClearAllButton.gameObject.SetActive(_anchorObjects.Count > 0);
-                SaveGeospatialAnchorHistory();
-            }
+           
         }
 
         private GeospatialAnchorHistory CreateHistory(Pose pose, AnchorType anchorType)
@@ -1150,78 +1120,11 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
             return anchor;
         }
 
-        private ARGeospatialAnchor PlaceGeospatialAnchor(
-            GeospatialAnchorHistory history)
-        {
-            bool terrain = history.AnchorType == AnchorType.Terrain;
-            Quaternion eunRotation = CreateRotation(history);
-            ARGeospatialAnchor anchor = null;
+        
 
-            if (terrain)
-            {
-                // Anchor returned will be null, the coroutine will handle creating the
-                // anchor when the promise is done.
-                ResolveAnchorOnTerrainPromise promise =
-                    AnchorManager.ResolveAnchorOnTerrainAsync(
-                        history.Latitude, history.Longitude,
-                        0, eunRotation);
+        
 
-                StartCoroutine(CheckTerrainPromise(promise, history));
-                return null;
-            }
-            else
-            {
-                anchor = AnchorManager.AddAnchor(
-                    history.Latitude, history.Longitude, history.Altitude, eunRotation);
-            }
-
-            if (anchor != null)
-            {
-                GameObject anchorGO = history.AnchorType == AnchorType.Geospatial ?
-                    Instantiate(GeospatialPrefab, anchor.transform) :
-                    Instantiate(TerrainPrefab, anchor.transform);
-                anchor.gameObject.SetActive(!terrain);
-                anchorGO.transform.parent = anchor.gameObject.transform;
-                _anchorObjects.Add(anchor.gameObject);
-                SnackBarText.text = GetDisplayStringForAnchorPlacedSuccess();
-            }
-            else
-            {
-                SnackBarText.text = GetDisplayStringForAnchorPlacedFailure();
-            }
-
-            return anchor;
-        }
-
-        private void ResolveHistory()
-        {
-            if (!_shouldResolvingHistory)
-            {
-                return;
-            }
-
-            _shouldResolvingHistory = false;
-            foreach (var history in _historyCollection.Collection)
-            {
-                switch (history.AnchorType)
-                {
-                    case AnchorType.Rooftop:
-                        PlaceARAnchor(history);
-                        break;
-                    case AnchorType.Terrain:
-                        PlaceARAnchor(history);
-                        break;
-                    default:
-                        PlaceGeospatialAnchor(history);
-                        break;
-                }
-            }
-
-            ClearAllButton.gameObject.SetActive(_anchorObjects.Count > 0);
-            SnackBarText.text = string.Format("{0} anchor(s) set from history.",
-                _anchorObjects.Count);
-        }
-
+        
         private void LoadGeospatialAnchorHistory()
         {
             if (PlayerPrefs.HasKey(_persistentGeospatialAnchorsStorageKey))
