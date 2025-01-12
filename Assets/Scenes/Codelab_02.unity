@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -874,7 +873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showCreditsOnScreen: 1
   _tilesetSource: 1
-  _url: https://tile.googleapis.com/v1/3dtiles/root.json?key=<MAP_TILES_API_KEY>
+  _url: https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyCk_l32g0USegUtrlR1zx4zsM8sjoRPZjA
   _ionAssetID: 0
   _ionAccessToken: 
   _ionServer: {fileID: 0}
@@ -2743,6 +2742,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!1 &1180705287
 GameObject:
   m_ObjectHideFlags: 0
