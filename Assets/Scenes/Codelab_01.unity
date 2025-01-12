@@ -1157,7 +1157,7 @@ MonoBehaviour:
   _altitudeOffset: NaN
   _latitude: 48.29110549667366
   _longitude: 2.9427041484520196
-  _altitude: 11.500000000931323
+  _altitude: 0
   _altitudeType: 1
   _useEditorAltitudeOverride: 1
   _editorAltitudeOverride: 132.6596168447286
@@ -2044,6 +2044,7 @@ GameObject:
   - component: {fileID: 791148985}
   - component: {fileID: 791148984}
   - component: {fileID: 791148983}
+  - component: {fileID: 791148988}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2258,6 +2259,29 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!136 &791148988
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791148981}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Height: 10
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &809809103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,7 +3510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa06394fb790e41d9a8d86f3872bf1ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 500
+  force: 1000
   frequency: 0.5
   initialOffset: {x: 0, y: 0, z: 1}
   ballPrefab: {fileID: 8226400644690965493, guid: 7cb14c99db5ae4643a8391a7298fdf6c, type: 3}
