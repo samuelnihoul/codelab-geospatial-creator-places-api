@@ -4,8 +4,6 @@ public class ARBallShooter : MonoBehaviour
 {
     public float force = 500.0f;
 
-    [SerializeField]
-    private float frequency = 0.5f;
 
     [SerializeField]
     private Vector3 initialOffset = new Vector3(0, 0, 1);
