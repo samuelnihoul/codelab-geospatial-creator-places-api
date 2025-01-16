@@ -7,6 +7,8 @@ public class ZombieMover : MonoBehaviour
     public int hp = 5;
     [SerializeField]
     private float altitudeCameraOffset = -2f;
+    [SerializeField]
+    private float lifeInSeconds = 60;
     void Start()
     {
     }
