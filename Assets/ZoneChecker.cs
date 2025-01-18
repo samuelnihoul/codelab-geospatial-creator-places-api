@@ -40,7 +40,7 @@ public class ZoneChecker : MonoBehaviour
             else
             {
                 // Time's up!
-                timerText.text = "Time's Up!";
+                timerText.text = "Time's Up! You lose.";
             }
         }
     }
