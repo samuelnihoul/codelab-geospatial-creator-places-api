@@ -3,15 +3,18 @@ using UnityEngine;
 
 public class ZoneChecker : MonoBehaviour
 {
-    private TextMeshProUGUI t;
+    [SerializeField]
+    private TextMeshProUGUI zoneText;
+    [SerializeField]
+    private TextMeshProUGUI timerText;
     [SerializeField]
     public string zone = "No Zone";
     public float objectif = 40f;
+    private bool isTimerStarted = false;
+    [SerializeField]
+    private float timeRemaining = 600f;
     // Start is called before the first frame update
-    void Start()
-    {
-        t = GameObject.FindGameObjectWithTag("Respawn").GetComponent<TextMeshProUGUI>();
-    }
+  
 
     // Update is called once per frame
     void Update()
@@ -21,6 +24,25 @@ public class ZoneChecker : MonoBehaviour
               Debug.Log(gameObject.name);
               t.text = zone;
           }*/
+        if (isTimerStarted)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime; // Reduce timeRemaining by deltaTime
+
+                // Format timeRemaining into minutes and seconds
+                int minutes = Mathf.FloorToInt(timeRemaining / 60);
+                int seconds = Mathf.FloorToInt(timeRemaining % 60);
+
+                // Update the UI Text element
+                timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            }
+            else
+            {
+                // Time's up!
+                timerText.text = "Time's Up!";
+            }
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -28,16 +50,10 @@ public class ZoneChecker : MonoBehaviour
         //check if the collider is the camera
         if (other.CompareTag("MainCamera"))
         {
-            t.text = zone;
+            zoneText.text = zone;
         }
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("MainCamera"))
-        {
-            t.text = "No Zone";
-        }
-    }
+  
     /* private void OnDrawGizmos()
      {
          Gizmos.DrawWireSphere(transform.position, objectif);
