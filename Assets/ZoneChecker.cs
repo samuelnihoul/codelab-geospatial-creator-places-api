@@ -51,6 +51,7 @@ public class ZoneChecker : MonoBehaviour
         if (other.CompareTag("MainCamera"))
         {
             zoneText.text = zone;
+            isTimerStarted = true;
         }
     }
   
