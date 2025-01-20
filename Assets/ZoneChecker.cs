@@ -46,11 +46,11 @@ public class ZoneChecker : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Handheld.Vibrate();
-
+       
         //check if the collider is the camera
         if (other.CompareTag("MainCamera"))
-        {
+        { Handheld.Vibrate();
+
             zoneText.text = zone;
             isTimerStarted = true;
         }

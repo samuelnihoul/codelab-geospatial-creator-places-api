@@ -29,14 +29,15 @@ public class ZombieMover : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Handheld.Vibrate();
+        
         if (collision.gameObject.CompareTag("ball"))
-        {
+        {Handheld.Vibrate();
             hp--;
             Destroy(collision.gameObject);
         }
         if (collision.transform.CompareTag("MainCamera"))
         {
+            Handheld.Vibrate();
 
             GameObject.FindGameObjectWithTag("hintText").GetComponent<TextMeshProUGUI>().text = "you got bitten by zombies";
         }
