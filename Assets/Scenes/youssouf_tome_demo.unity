@@ -1290,12 +1290,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 46.79305459476038
-  _longitude: -71.16128953633854
+  _latitude: 46.71762203476818
+  _longitude: -71.27335741483051
   _altitude: 0
   _altitudeType: 1
   _useEditorAltitudeOverride: 1
-  _editorAltitudeOverride: 60.36707969661802
+  _editorAltitudeOverride: 48.43504816945642
   _anchorManager: {fileID: 596133976}
   Origin: {fileID: 1434703285}
 --- !u!4 &496961269
@@ -1307,7 +1307,7 @@ Transform:
   m_GameObject: {fileID: 496961263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.8, y: 48.867035, z: 22.9}
+  m_LocalPosition: {x: -12.41, y: 36.935028, z: 10.12}
   m_LocalScale: {x: 10, y: 20, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3833,12 +3833,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originAuthority: 0
-  _latitude: 46.7928486
-  _longitude: -71.16137859999999
+  _latitude: 46.717531
+  _longitude: -71.2731951
   _height: 11.5
-  _ecefX: 1412545.3831684687
-  _ecefY: -4140174.8114354163
-  _ecefZ: 4626037.171111433
+  _ecefX: 1406420.9968054919
+  _ecefY: -4148699.7273011478
+  _ecefZ: 4620300.840024771
   _scale: 1
 --- !u!114 &1434703285
 MonoBehaviour:
@@ -5643,7 +5643,7 @@ Transform:
   m_GameObject: {fileID: 2022790167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.2, y: 48.867035, z: 15.9}
+  m_LocalPosition: {x: -19.66, y: 36.935028, z: 4.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5662,12 +5662,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 46.792991626399065
-  _longitude: -71.16102234576972
+  _latitude: 46.71757309884597
+  _longitude: -71.2734522399434
   _altitude: 132.65976093523204
   _altitudeType: 1
   _useEditorAltitudeOverride: 1
-  _editorAltitudeOverride: 60.36711265332997
+  _editorAltitudeOverride: 48.435060042887926
   _anchorManager: {fileID: 596133976}
   Origin: {fileID: 1434703285}
 --- !u!114 &2022790170
