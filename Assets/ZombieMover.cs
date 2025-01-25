@@ -11,10 +11,11 @@ public class ZombieMover : MonoBehaviour
     private float altitudeCameraOffset = -2f;
     [SerializeField]
     private float lifeInSeconds = 60;
-    [SerializeField]
     private Image hitIndicator;
     void Start()
     {
+       GameObject hitIndicatorObject = GameObject.Find("HitIndicator");
+        hitIndicator=hitIndicatorObject.GetComponent<Image>();
     }
     // Update is called once per frame
     void Update()
