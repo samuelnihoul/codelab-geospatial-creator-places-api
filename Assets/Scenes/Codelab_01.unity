@@ -1107,15 +1107,15 @@ PrefabInstance:
       objectReference: {fileID: 1434703285}
     - target: {fileID: 1220578855962913931, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: _altitude
-      value: 11.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1220578855962913931, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: _latitude
-      value: 48.81019999999999
+      value: 48.80990172915112
       objectReference: {fileID: 0}
     - target: {fileID: 1220578855962913931, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: _longitude
-      value: 2.380013
+      value: 2.379547112002431
       objectReference: {fileID: 0}
     - target: {fileID: 1220578855962913931, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: _altitudeType
@@ -1127,7 +1127,7 @@ PrefabInstance:
       objectReference: {fileID: 596133976}
     - target: {fileID: 1220578855962913931, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: _editorAltitudeOverride
-      value: 111.04488372895867
+      value: 111.04506168980151
       objectReference: {fileID: 0}
     - target: {fileID: 1220578855962913931, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: _useEditorAltitudeOverride
@@ -1177,6 +1177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SphereGemLarge Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2583605982519966470, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5873356908849418302, guid: 1f58249f0209066479b9050d3c2d96db, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
