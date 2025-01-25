@@ -1,5 +1,7 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
 
 public class ZombieMover : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class ZombieMover : MonoBehaviour
     private float altitudeCameraOffset = -2f;
     [SerializeField]
     private float lifeInSeconds = 60;
+    [SerializeField]
+    private Image hitIndicator;
     void Start()
     {
     }
@@ -31,15 +35,29 @@ public class ZombieMover : MonoBehaviour
     {
         
         if (collision.gameObject.CompareTag("ball"))
-        {Handheld.Vibrate();
+        {
+            Flash();
             hp--;
             Destroy(collision.gameObject);
         }
         if (collision.transform.CompareTag("MainCamera"))
         {
-            Handheld.Vibrate();
-
+            
+            // doesn't work currently
             GameObject.FindGameObjectWithTag("hintText").GetComponent<TextMeshProUGUI>().text = "you got bitten by zombies";
+        }
+    }
+    private IEnumerator Flash()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            // Changer la couleur en rouge
+            hitIndicator.color = Color.red;
+            yield return new WaitForSeconds(1);
+
+            // Revenir à la couleur d'origine
+            hitIndicator.color = Color.white;
+            yield return new WaitForSeconds(1);
         }
     }
 
