@@ -1143,15 +1143,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.22
+      value: -34.219975
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 99.54488
+      value: 94.70174
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -33.17
+      value: -33.16997
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1192,8 +1192,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2560564743319896632, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401594920}
   m_SourcePrefab: {fileID: 100100000, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
+--- !u!1 &401594919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2560564743319896632, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
+  m_PrefabInstance: {fileID: 401594918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &401594920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401594919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3d0e3f52dfe4243aceaba16f9cd0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _altitudeOffset: NaN
+  _latitude: 48.80990172915112
+  _longitude: 2.379547112002431
+  _altitude: 1
+  _altitudeType: 1
+  _useEditorAltitudeOverride: 1
+  _editorAltitudeOverride: 106.20191440731287
+  _anchorManager: {fileID: 596133976}
+  Origin: {fileID: 1434703285}
 --- !u!1 &430750537
 GameObject:
   m_ObjectHideFlags: 0
@@ -4302,15 +4331,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.4
+      value: -28.399979
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 99.54488
+      value: 94.743004
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.6
+      value: -28.59998
       objectReference: {fileID: 0}
     - target: {fileID: 2559535997731884416, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4351,8 +4380,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2560564743319896632, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1471027974}
   m_SourcePrefab: {fileID: 100100000, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
+--- !u!1 &1471027973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2560564743319896632, guid: 24641293b2edf4af595cfd3ed07dc282, type: 3}
+  m_PrefabInstance: {fileID: 1471027972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1471027974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471027973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3d0e3f52dfe4243aceaba16f9cd0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _altitudeOffset: NaN
+  _latitude: 48.80994282359314
+  _longitude: 2.3796263480627204
+  _altitude: 1
+  _altitudeType: 1
+  _useEditorAltitudeOverride: 1
+  _editorAltitudeOverride: 106.24313113745302
+  _anchorManager: {fileID: 596133976}
+  Origin: {fileID: 1434703285}
 --- !u!1 &1471100010
 GameObject:
   m_ObjectHideFlags: 0
@@ -6052,7 +6110,7 @@ Transform:
   m_GameObject: {fileID: 2022790167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.29937, y: -11.500138, z: -29.199392}
+  m_LocalPosition: {x: -30.299873, y: 94.76482, z: -29.199879}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6076,7 +6134,7 @@ MonoBehaviour:
   _altitude: 132.65976093523204
   _altitudeType: 1
   _useEditorAltitudeOverride: 1
-  _editorAltitudeOverride: 0.000000455416738986969
+  _editorAltitudeOverride: 106.26495502516627
   _anchorManager: {fileID: 596133976}
   Origin: {fileID: 1434703285}
 --- !u!114 &2022790170

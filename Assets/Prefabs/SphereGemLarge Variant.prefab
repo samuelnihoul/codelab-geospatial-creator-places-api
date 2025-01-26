@@ -62,9 +62,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1000010728489230, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1220578855962913931}
-    - targetCorrespondingSourceObject: {fileID: 1000010728489230, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6301835004693585729}
     - targetCorrespondingSourceObject: {fileID: 1000010728489230, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 3}
       insertIndex: -1
@@ -78,27 +75,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010728489230, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 3}
   m_PrefabInstance: {fileID: 2561274474247127862}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1220578855962913931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2560564743319896632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b3d0e3f52dfe4243aceaba16f9cd0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _altitudeOffset: NaN
-  _latitude: 0
-  _longitude: 0
-  _altitude: 0
-  _altitudeType: 0
-  _useEditorAltitudeOverride: 0
-  _editorAltitudeOverride: 0
-  _anchorManager: {fileID: 0}
-  Origin: {fileID: 0}
 --- !u!54 &6301835004693585729
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,3 +135,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e1548fb80d7c46ec98bd87aac123940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hintString: 
+  hintText: {fileID: 0}
