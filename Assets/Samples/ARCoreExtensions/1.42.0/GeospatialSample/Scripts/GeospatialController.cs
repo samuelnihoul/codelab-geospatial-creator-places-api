@@ -786,7 +786,7 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                 "Altitude: {4}m{0}" +
                 "Vertical Accuracy: {5}m{0}" +
                 "Eun Rotation: {6}{0}" +
-                "Orientation Yaw Accuracy: {7}°",
+                "Orientation Yaw Accuracy: {7}°"+
                  "Distance to Target: {8}m{0}" +
                 "Bearing to Target: {9}°",
                 Environment.NewLine,
