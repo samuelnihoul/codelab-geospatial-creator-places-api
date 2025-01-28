@@ -69,6 +69,9 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         Justification = "Bypass source check.")]
     public class GeospatialController : MonoBehaviour
     {
+        [Header("Addded by Samuel")]
+        public float targetLatitude;
+        public float targetLongitude;
         [Header("AR Components")]
 
 #if ARCORE_USE_ARF_5 // use ARF 5
@@ -769,6 +772,14 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
             InfoPanel.SetActive(true);
             if (earthTrackingState == TrackingState.Tracking)
             {
+                // Coordonnées actuelles de l'utilisateur
+                float userLatitude =(float) pose.Latitude;
+                float userLongitude = (float)pose.Longitude;
+
+                // Calculer la distance et la direction
+                float distance = CalculateDistance(userLatitude, userLongitude, targetLatitude, targetLongitude);
+                float bearing = CalculateBearing(userLatitude, userLongitude, targetLatitude, targetLongitude);
+
                 InfoText.text = string.Format(
                 "Latitude/Longitude: {1}°, {2}°{0}" +
                 "Horizontal Accuracy: {3}m{0}" +
@@ -776,6 +787,8 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                 "Vertical Accuracy: {5}m{0}" +
                 "Eun Rotation: {6}{0}" +
                 "Orientation Yaw Accuracy: {7}°",
+                 "Distance to Target: {8}m{0}" +
+                "Bearing to Target: {9}°",
                 Environment.NewLine,
                 pose.Latitude.ToString("F6"),
                 pose.Longitude.ToString("F6"),
@@ -783,7 +796,9 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
                 pose.Altitude.ToString("F2"),
                 pose.VerticalAccuracy.ToString("F2"),
                 pose.EunRotation.ToString("F1"),
-                pose.OrientationYawAccuracy.ToString("F1"));
+                pose.OrientationYawAccuracy.ToString("F1"),
+                distance.ToString("F2"),
+                bearing.ToString("F1"));
             }
             else
             {
@@ -1408,6 +1423,37 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         {
             return string.Format(
                     "Failed to set a {0} anchor!", _anchorType);
+        }
+        // Fonction pour calculer la distance entre deux points géographiques
+        float CalculateDistance(float lat1, float lon1, float lat2, float lon2)
+        {
+            const float R = 6371e3f; // Rayon de la Terre en mètres
+            float phi1 = lat1 * Mathf.Deg2Rad;
+            float phi2 = lat2 * Mathf.Deg2Rad;
+            float deltaPhi = (lat2 - lat1) * Mathf.Deg2Rad;
+            float deltaLambda = (lon2 - lon1) * Mathf.Deg2Rad;
+
+            float a = Mathf.Sin(deltaPhi / 2) * Mathf.Sin(deltaPhi / 2) +
+                      Mathf.Cos(phi1) * Mathf.Cos(phi2) *
+                      Mathf.Sin(deltaLambda / 2) * Mathf.Sin(deltaLambda / 2);
+            float c = 2 * Mathf.Atan2(Mathf.Sqrt(a), Mathf.Sqrt(1 - a));
+
+            return R * c;
+        }
+
+        // Fonction pour calculer le cap entre deux points géographiques
+        float CalculateBearing(float lat1, float lon1, float lat2, float lon2)
+        {
+            float phi1 = lat1 * Mathf.Deg2Rad;
+            float phi2 = lat2 * Mathf.Deg2Rad;
+            float deltaLambda = (lon2 - lon1) * Mathf.Deg2Rad;
+
+            float y = Mathf.Sin(deltaLambda) * Mathf.Cos(phi2);
+            float x = Mathf.Cos(phi1) * Mathf.Sin(phi2) -
+                      Mathf.Sin(phi1) * Mathf.Cos(phi2) * Mathf.Cos(deltaLambda);
+            float bearing = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
+
+            return (bearing + 360) % 360; // Normaliser le cap à [0, 360)
         }
     }
 }
